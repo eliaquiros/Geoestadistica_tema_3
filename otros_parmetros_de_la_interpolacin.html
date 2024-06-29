@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Otros parámetros de la interpolación | Tema_3 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Elia Quirós Rosado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema_3</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 3: Métodos de interpolación</a></li>
+   <li><a href="objetivos_del_tema_3.html" class="no-ch">Objetivos del tema 3</a></li>
+   <li class="current-page-parent"><a href="contenidos_del_tema.html" class="current-page-parent daddy">Contenidos del tema</a>
+   <ul>
+      <li><a href="clasificacin_de_los_mtodos_de_interpolacin.html" class="no-ch">Clasificación de los métodos de interpolación</a></li>
+      <li><a href="interpolacin_geoestadstica.html" class="daddy">Interpolación Geoestadística</a>
+      <ul class="other-section">
+         <li><a href="tipos_de_interpolacin_geoestadstica.html" class="no-ch">Tipos de interpolación geoestadística</a></li>
+         <li><a href="mtodos_de_interpolacin_geoestadstica.html" class="no-ch">Métodos de interpolación geoestadística</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="otros_parmetros_de_la_interpolacin.html" class="active no-ch">Otros parámetros de la interpolación</a></li>
+      <li><a href="eleccin_del_mtodo_de_interpolacin.html" class="no-ch">Elección del método de interpolación</a></li>
+   </ul>
+   </li>
+   <li><a href="documentacin_del_tema.html" class="daddy">Documentación del tema</a>
+   <ul class="other-section">
+      <li><a href="datos.html" class="no-ch">Datos</a></li>
+   </ul>
+   </li>
+   <li><a href="modelo_memoria_de_la_prctica.html" class="no-ch">Modelo memoria de la práctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mtodos_de_interpolacin_geoestadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eleccin_del_mtodo_de_interpolacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Otros parámetros de la interpolación</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_cuestionario" id="id12">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_cuestionario.svg)"><h1 class="iDeviceTitle">Otros factores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen otros factores que pueden influir en el resultado final de la interpolación, tales como el número de puntos utilizados en la interpolación de cada localización. Así podremos limitar en función de un <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tcec9835b-d9a1-384b-21df-7c2dcb2dc9f1" id="linkcec9835b-d9a1-384b-21df-7c2dcb2dc9f1" style="color: #3366ff;"><strong>máximo número de puntos</strong></a></span> o en función de una<span style="color: #3366ff;"> <a class="exe-dialog-link" rel="lightbox" href="#t5b2aae5d-8df8-18a0-b269-dba2bead877e" id="link5b2aae5d-8df8-18a0-b269-dba2bead877e" style="color: #3366ff;"><strong>distancia dada</strong></a></span>. Esta última suele ser la más utilizada, cuando se sabe el alcance de la variable a interpolar.</p>
+<p>Por ejemplo, se sabe que los granos de polen no viajan más de ciertos km, ese límite será muy importante a la hora de configurar la interpolación, porque se sabe de antemano que la estación con datos no puede recoger polen de localizaciones más alejadas de esa distancia.</p>
+<hr />
+<p>Otro parámetro que puede constreñir en gran medida los resultados es la existencia o no de<span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t08c60587-d934-aca1-4448-94d478a59795" id="link08c60587-d934-aca1-4448-94d478a59795" style="color: #3366ff;"><strong> barreras en la interpolación</strong></a></span>. Aunque las barreras parece que son más usuales en la interpolación de elevaciones del terreno, también podrían ser aplicadas a otra serie de variables a estimar.</p>
+<p>Las barreras crean discontinuidades lineales en las superficies. <strong>Los métodos IDW y Splines soportan el uso de barreras</strong>.</p>
+<div id="tcec9835b-d9a1-384b-21df-7c2dcb2dc9f1" class="exe-dialog-text js-hidden">
+<p><img src="img0.1.png" width="332" height="226" alt="puntos" /></p>
+</div>
+<div id="t5b2aae5d-8df8-18a0-b269-dba2bead877e" class="exe-dialog-text js-hidden">
+<p><img src="img1.1.png" width="325" height="222" alt="distancias" /></p>
+</div>
+<div id="t08c60587-d934-aca1-4448-94d478a59795" class="exe-dialog-text js-hidden">
+<p><img src="img2.1.png" width="356" height="194" alt="barrera" />  <img src="img3.1.png" width="343" height="176" alt="no barrera" /></p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mtodos_de_interpolacin_geoestadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eleccin_del_mtodo_de_interpolacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
