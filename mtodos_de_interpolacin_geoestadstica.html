@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Métodos de interpolación geoestadística | Tema_3 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Elia Quirós Rosado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema_3</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 3: Métodos de interpolación</a></li>
+   <li><a href="objetivos_del_tema_3.html" class="no-ch">Objetivos del tema 3</a></li>
+   <li class="current-page-parent"><a href="contenidos_del_tema.html" class="current-page-parent daddy">Contenidos del tema</a>
+   <ul>
+      <li><a href="clasificacin_de_los_mtodos_de_interpolacin.html" class="no-ch">Clasificación de los métodos de interpolación</a></li>
+      <li class="current-page-parent"><a href="interpolacin_geoestadstica.html" class="current-page-parent daddy">Interpolación Geoestadística</a>
+      <ul>
+         <li><a href="tipos_de_interpolacin_geoestadstica.html" class="no-ch">Tipos de interpolación geoestadística</a></li>
+         <li id="active"><a href="mtodos_de_interpolacin_geoestadstica.html" class="active no-ch">Métodos de interpolación geoestadística</a></li>
+      </ul>
+      </li>
+      <li><a href="otros_parmetros_de_la_interpolacin.html" class="no-ch">Otros parámetros de la interpolación</a></li>
+      <li><a href="eleccin_del_mtodo_de_interpolacin.html" class="no-ch">Elección del método de interpolación</a></li>
+   </ul>
+   </li>
+   <li><a href="documentacin_del_tema.html" class="daddy">Documentación del tema</a>
+   <ul class="other-section">
+      <li><a href="datos.html" class="no-ch">Datos</a></li>
+   </ul>
+   </li>
+   <li><a href="modelo_memoria_de_la_prctica.html" class="no-ch">Modelo memoria de la práctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tipos_de_interpolacin_geoestadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="otros_parmetros_de_la_interpolacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Métodos de interpolación geoestadística</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id11">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Métodos de interpolación geoestadística</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen diversos métodos de interpolación geoestadística, los más extendidos en uso son los siguientes:</p>
+<div class="exe-fx exe-tabs">
+<h2>Método de interpolación IDW</h2>
+<p>La interpolación IDW (Ponderación inversa de la distancia) es un método exacto de interpolación que estima los valores de la celda promediando los valores de los datos a partir de los valores de sus vecinos. Parte de la afirmación de que<strong> los puntos más cercanos tienen más influencia que los más lejanos</strong>.</p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#te8b0198a-a777-9c5b-1fcf-eb1996621ea3" id="linke8b0198a-a777-9c5b-1fcf-eb1996621ea3" style="color: #3366ff;"><span style="text-decoration: underline;"><img src="img0.png" width="192" height="108" alt="IDW" /></span></a></span></p>
+<p>Para establecer una función de proporcionalidad entre el peso y la distancia, la fórmula general queda como sigue:</p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t2b2e07db-a050-66cc-c0cf-14a552fb6c7c" id="link2b2e07db-a050-66cc-c0cf-14a552fb6c7c" style="color: #3366ff;"><img src="img1.png" width="153" height="161" alt="peso" /></a></span></p>
+<hr />
+<p><span style="color: #333333; font-size: 1.05em;">Un caso práctico sería el siguiente:</span><br /><span style="color: #333333;"></span></p>
+<p><span style="color: #333333;"></span></p>
+<p><span style="color: #333333;"><img src="img2.png" width="342" height="286" alt="a" />                <img src="img4.png" width="68" height="50" alt="flechaa" style="vertical-align: top; margin-bottom: 200px; margin-top: 200px;" />        <img src="img3.png" width="483" height="350" alt="b" /></span></p>
+<hr />
+<p><span style="color: #333333;">La interpolación IDW permite la generación de información ráster de una forma rápida y simple. </span></p>
+<p>Sin embargo, se trata esencialmente de una media ponderada y, por tanto, <strong>el resultado se encuentra siempre incluido dentro del rango de variación de los datos</strong>. De no recogerse en la muestra los valores extremos (tales como cimas o valles), estos desaparecen y son sustituidos por tramos llanos. El resultado deriva en un «aplanamiento» de la superficie y la aparición de falsas terrazas.</p>
+<p><span style="color: #333333;"><img src="img5.png" width="365" height="361" alt="IDW" /></span></p>
+<hr />
+<p>El método IDW <strong>solo tiene en cuenta el alejamiento</strong>, pero no la posición. </p>
+<p><strong>La calidad</strong> del resultado de interpolación <strong>puede disminuir</strong> s<strong>i la distribución de los puntos</strong> de datos de la muestra <strong>es desigual</strong>. </p>
+<h2>Método de interpolación Spline</h2>
+<p>Estima los valores utilizando una función matemática. Como resultado se obtiene una superficie suave que pasa exactamente por los puntos por los que se forma.</p>
+<p>Puede predecir valles y crestas en los datos, siendo un método idóneo para representar variaciones suaves de datos tales como temperaturas.</p>
+<p>Desde un punto de vista matemático, los <strong>splines son funciones polinómicas por tramos</strong>, de tal modo que, en lugar de emplear un único polinomio para ajustar a todo un intervalo, se emplea un polinomio distinto para cada tramo.</p>
+<p>Este tipo de interpolación <strong>puede alcanzar valores fuera del rango definido por los puntos de partida</strong>.</p>
+<hr />
+<p>En zonas con cambios bruscos de valores, pueden presentarse oscilaciones artificiales significativas. Para solucionar este problema, una solución es el empleo de splines con tensión. </p>
+<p>Existen variaciones del método tales como <strong>B-splines</strong> (Basic splines) o <strong>Plate-splines</strong> que se asemeja a una flexión que tiene una hoja delgada de metal, de tal manera que el ajuste se resiste más a la flexión penalizando más la suavidad de la superficie.</p>
+<h2>Método de Vecino natural</h2>
+<p>La interpolación por vecindad no es adecuada para el trabajo con variables continuas, pero sí para <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t7ae42fa2-f7df-45ee-36d4-df0f2e0f7857" id="link7ae42fa2-f7df-45ee-36d4-df0f2e0f7857" style="color: #3366ff;">variables categóricas</a></span>.</p>
+<p>Se basa en la <strong>teselación de Voronoi</strong>, que consiste en unir los puntos entre sí, trazando las mediatrices de los segmentos de unión. Las intersecciones de estas mediatrices determinan una serie de polígonos en un espacio bidimensional alrededor de un conjunto de puntos de control, de manera que el perímetro de los polígonos generados sea equidistante a los puntos vecinos y designan su área de influencia.</p>
+<p><img src="img6.png" width="262" height="211" alt="voronoi" /></p>
+<p>Los denominados polígonos de Thiessen/Voronoi son de uso habitual en el análisis climatológico/hidrológico asociando a cada zona los valores de la estación meteorológica más cercana.</p>
+<p>El resultado es una capa con saltos abruptos (tanto como lo sean las diferencias entre los valores de puntos cercanos), con un aspecto «aterrazado».</p>
+<p>El conjunto de celdas con el mismo valor (dentro de la misma terraza) representa el lugar geométrico de las celdas cuyo punto más cercano de entre los de partida es uno dado.</p>
+<h2>Método de interpolación Kriging</h2>
+<p>Es un método de interpolación muy potente que asume que<strong> la distancia o dirección entre los puntos de muestra refleja una correlación espacial que puede ser utilizada para explicar la variación de la superficie total</strong>.</p>
+<p>Ajusta una función a un número de puntos específicos o a todos los puntos dentro de un radio específico para determinar el valor de la salida para cada localización.</p>
+<p><img src="img7.png" width="420" height="248" alt="variograma" /></p>
+<p>Este método es más apropiado cuando<strong> se conoce la distancia de correlación espacial o su dirección</strong>, por ello es muy utilizado en ciencias de la tierra y geología.</p>
+<p>Los valores pronosticados no tienen por qué estar entre los valores de las muestras y su superficie no pasa por los valores de la muestra.</p>
+<p>Junto con la superficie interpolada, el kriging genera asimismo superficies con medidas del error de interpolación (<strong>validación cruzada</strong>) que pueden emplearse para conocer la bondad de esta en las distintas zonas.</p>
+<p>La interpolación óptima debe cumplir los siguientes requisitos, que son cubiertos por el método kriging.</p>
+<ul>
+<li>El <strong>error</strong> de predicción debe ser <strong>mínimo</strong>.</li>
+<li>Los <strong>puntos cercanos</strong> deben tener <strong>pesos mayores</strong> que los lejanos.</li>
+<li>La presencia de un <strong>punto cercano</strong> en una dirección dada debe <strong>restar influencia</strong> (enmascarar) a puntos en la <strong>misma dirección</strong>, pero <strong>más lejanos</strong>.</li>
+<li><strong>Puntos</strong> muy cercanos con valores <strong>muy similares deben «agruparse»</strong> de tal forma que no aparezca sesgo por sobremuestreo.</li>
+<li>La <strong>estimación del error</strong> debe hacerse en función de la <strong>estructura de los puntos</strong> no de los valores.</li>
+</ul>
+<hr />
+<p><span style="text-decoration: underline;"><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tc5ae4eb8-51ef-afdc-38b6-e64c3fdd76f0" id="linkc5ae4eb8-51ef-afdc-38b6-e64c3fdd76f0" style="color: #3366ff;"><img src="img8.png" width="226" height="101" alt="kriging" /></a></span></span></p>
+<p>El método de Kriging supone que, cuando disponemos de un punto con un valor conocido para una determinada variable, l<strong>a variación de ésta será menor en el entorno más cercano a dicho punto</strong>, sin embargo, conforme las distancias se incrementen respecto al punto conocido, la variación de la variable será mucho mayor.</p>
+<p>Por ello se requiere, asimismo, que exista un número suficiente de puntos (<strong>mayor de 50</strong>) para estimar correctamente el variograma.</p>
+<p>A partir de los valores del variograma, se estima un vector de pesos que, multiplicado por el vector de valores de los puntos de influencia, da el valor estimado.</p>
+<hr />
+<p><strong>Variograma</strong>: es una función matemática que mide la variabilidad, es decir, la desemejanza de una variable, cuando sus valores se observan en puntos que están separados una distancia concreta.</p>
+<p>Se trata de representar su gráfica generando las parejas de puntos con los datos reales separados en 1, 2, 3, etc. unidades de distancia a lo largo de una dirección.</p>
+<p>En el caso de un variograma, las cosas más cercanas son más predecibles y tienen menos variabilidad. Mientras que las cosas distantes son menos predecibles y están menos relacionadas (<strong>correlación espacial</strong>).</p>
+<p><span style="text-decoration: underline;"><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#ta243b94d-2397-909f-8ce0-5a1396dca4bc" id="linka243b94d-2397-909f-8ce0-5a1396dca4bc" style="color: #3366ff;"><img src="img10.png" width="351" height="463" alt="parejas de puntos" /></a></span></span></p>
+<p><span style="color: #333333;"><strong>En puntos de muestreo con distancias cercanas</strong>, la diferencia de valores entre puntos tiende a ser pequeña. En otras palabras,<strong> la semivarianza es pequeña</strong>. Pero cuando las <strong>distancias</strong> de los puntos de muestreo son <strong>más alejadas</strong>, es menos probable que sean similares. Esto significa que la <strong>semivarianza se hace grande</strong>. A medida que aumenta la distancia entre los puntos de muestra, deja de haber relación entre ellos. </span></p>
+<p><span style="text-decoration: underline;"><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t349798c9-4422-c6e5-0d8e-2a932f45e4df" id="link349798c9-4422-c6e5-0d8e-2a932f45e4df" style="color: #3366ff; text-decoration: underline;"><img src="img11.png" width="456" height="299" alt="vario_2" /></a></span><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t349798c9-4422-c6e5-0d8e-2a932f45e4df" id="link349798c9-4422-c6e5-0d8e-2a932f45e4df" style="color: #3366ff; text-decoration: underline;"><span style="color: #333333; text-decoration: underline;"> </span></a></span></span></p>
+<p><span style="color: #333333;">Cuando se tienen dos puntos de muestra en el mismo lugar, se puede esperar que tengan el mismo valor, por lo que <strong>la pepita debería ser cero</strong>. A veces no es así y esto añade aleatoriedad. Pero <strong>antes de que el gráfico empiece a nivelarse, estos valores están espacialmente autocorrelacionados</strong>.</span></p>
+<p>Cuando aumenta la distancia, aumenta la varianza. Hay menos pares de puntos separados por distancias lejanas, de ahí la menor correlación entre los puntos de la muestra.</p>
+<p>Es importante acotar que la definición de un variograma se ajusta siempre a una dirección específica.</p>
+<ul>
+<li>Si el <strong>variograma es similar en diferentes direcciones</strong> se puede llamar un <strong>variograma isotrópico</strong>.</li>
+<li>Si se detectan <strong>variaciones bruscas</strong> en la definición del variograma <strong>en diferentes direcciones</strong> corresponde entonces a un <strong>variograma anisotrópico</strong> en el cual además de la distancia, la dirección influye en la autocorrelación espacial de una variable.</li>
+</ul>
+<hr />
+<p>La forma correcta de proceder es seleccionar el tipo de modelo que mejor se ajuste a los datos y que proporcionará una función matemática con relación entre valores y distancias.</p>
+<p>Habitualmente se utilizan funciones como la exponencial, la lineal, la esférica, la gaussiana, etc.:</p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t24b3231a-94fc-dc19-8966-ba4d43ed42a6" id="link24b3231a-94fc-dc19-8966-ba4d43ed42a6" style="color: #3366ff;">Modelo lineal</a></span>:           <img src="img12.png" width="274" height="189" alt="lineal" style="vertical-align: middle;" /> </p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t5f4bf2ae-405f-5192-aac8-e68858741482" id="link5f4bf2ae-405f-5192-aac8-e68858741482" style="color: #3366ff;">Modelo Esférico</a></span>:       <img src="img13.png" width="274" height="188" alt="esférico" style="vertical-align: middle;" /></p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#taf14903b-a6b9-6f40-fcaf-5f5316570b89" id="linkaf14903b-a6b9-6f40-fcaf-5f5316570b89" style="color: #3366ff;">Modelo Exponencial</a></span>: <img src="img14.png" width="274" height="188" alt="exponencial" style="vertical-align: middle;" /></p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tb6e38b62-07e5-a4d7-550e-028b5a326edd" id="linkb6e38b62-07e5-a4d7-550e-028b5a326edd" style="color: #3366ff;">Modelo Gaussiano</a></span>:   <img src="img15.png" width="274" height="189" alt="gauss" style="vertical-align: middle;" /></p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t3f332dd4-011b-6800-4bba-16c94d803963" id="link3f332dd4-011b-6800-4bba-16c94d803963" style="color: #3366ff;">Modelo Circular</a></span>:       <img src="img16.png" width="274" height="188" alt="circular" style="vertical-align: middle;" /></p>
+<hr />
+<p>Existen dos tipologías de kriging:</p>
+<h3>Kriging ordinario</h3>
+<p>La aplicación del kriging ordinario implica la asunción de una serie de características de los datos:</p>
+<ul>
+<li>La variación es aleatoria.</li>
+<li>Existe dependencia espacial.</li>
+<li>El proceso espacial subyacente es intrínsecamente estacionario con media constante y varianza que depende solo de la separación en distancia entre los sitios y no de su posición.</li>
+</ul>
+<h3>Kriging universal</h3>
+<p>La suposición de estacionariedad intrínseca no se cumple cuando existen tendencias geográficas pronunciada de naturaleza sistemática y no aleatoria. La tendencia puede ser regional, es decir, una variación sistemática en toda la región de interés o local de un punto a otro dentro de la región estudiada. La existencia de tendencias puede ser explorada graficando los datos de la variable analizada en función a la variable que se supone genera la tendencia espacial.</p>
+<hr />
+<p>La <strong>exactitud</strong> del kriging depende de varios factores:</p>
+<ul>
+<li>El número de muestras tomadas.</li>
+<li>La calidad de la medición en cada punto.</li>
+<li>Las ubicaciones de las muestras en la zona si las muestras son igualmente espaciadas se alcanza una mejor cobertura.</li>
+<li>Las distancias entre las muestras para la predicción es mejor usar muestras vecinas que muestras distantes esto es, la precisión mejora cuando la cercanía de las muestras aumenta, y se deteriora cuando esta disminuye.</li>
+<li>La continuidad espacial de la variable o atributo en estudio es más fácil estimar el valor de una variable bastante regular en una región que una que presenta grandes fluctuaciones.</li>
+</ul>
+</div>
+<p></p>
+<div id="te8b0198a-a777-9c5b-1fcf-eb1996621ea3" class="exe-dialog-text js-hidden">
+<p><strong>Ž<sub>j</sub></strong> es el valor estimado de la magnitud a interpolar para el punto<em> j.</em></p>
+<p><strong>n</strong> es el número de puntos usados en la interpolación.</p>
+<p><em><strong>z<sub>i</sub></strong></em> el valor en el punto i-ésimo.</p>
+<p><em><strong>k<sub>ij</sub></strong> </em>el peso asociado al dato i en el cálculo del nodo<em> j.</em></p>
+<p>Los pesos <em>k</em> varían entre 0 y 1 para cada dato, y la suma total de ellos es la unidad.</p>
+</div>
+<div id="t2b2e07db-a050-66cc-c0cf-14a552fb6c7c" class="exe-dialog-text js-hidden">
+<p><em><strong>β</strong></em> es un exponente de ponderación que controla la forma en la que el peso disminuye con la distancia.</p>
+</div>
+<div id="t7ae42fa2-f7df-45ee-36d4-df0f2e0f7857" class="exe-dialog-text js-hidden">
+<p>Datos de precipitación</p>
+</div>
+<div id="tc5ae4eb8-51ef-afdc-38b6-e64c3fdd76f0" class="exe-dialog-text js-hidden">
+<p><strong><em>λ<sub>i</sub></em> </strong>es el factor de ponderación, que se calcula en lugar de por distancias, por correlación mediante variogramas teóricos.</p>
+<p><img src="img10.png" width="417" height="270" alt="teóricos" /></p>
+</div>
+<div id="ta243b94d-2397-909f-8ce0-5a1396dca4bc" class="exe-dialog-text js-hidden">
+<p>Para comprender la dependencia espacial, los variogramas toman 2 ubicaciones de muestra y miden la distancia entre ambos puntos. En el eje X, se traza la distancia en retardos (lags), que no son más que distancias agrupadas. Tomando cada conjunto de 2 ubicaciones de muestra, mide la varianza entre la variable que estamos midiendo y la representa en el eje Y. En teoría tendríamos que considerar todas las distancias entre 2 muestras y su variabilidad (combinación de todos los puntos tomados de dos en dos). Para no representarlos todos, se hacen agrupaciones con características similares.</p>
+<p><img src="img17.png" width="351" height="463" alt=".." /></p>
+</div>
+<div id="t349798c9-4422-c6e5-0d8e-2a932f45e4df" class="exe-dialog-text js-hidden">
+<p><strong>Sill/Meseta</strong>: valor en el que el modelo se aplana por primera vez. Coincide con la varianza estadística de la variable.</p>
+<p><strong>Range/Alcance</strong>: distancia a la que el modelo se aplana por primera vez. Coincide con la distancia máxima sobre el eje donde existe autocorrelación espacial.</p>
+<p><strong> Nugget/pepita</strong>: valor en el que el semivariograma (casi) intercepta el valor Y.</p>
+</div>
+<div id="t24b3231a-94fc-dc19-8966-ba4d43ed42a6" class="exe-dialog-text js-hidden">
+<p>Un modelo lineal significa que la variabilidad espacial aumenta linealmente con la distancia. Es el tipo de modelo más simple, sin meseta, lo que significa que el usuario tiene que seleccionar arbitrariamente el umbral y el rango.</p>
+</div>
+<div id="t5f4bf2ae-405f-5192-aac8-e68858741482" class="exe-dialog-text js-hidden">
+<p>El modelo esférico es uno de los modelos más comunes que utilizamos en la modelización de variogramas. Se trata de una ecuación cuadrática modificada en la que la dependencia espacial se aplana con el umbral y el rango.</p>
+</div>
+<div id="taf14903b-a6b9-6f40-fcaf-5f5316570b89" class="exe-dialog-text js-hidden">
+<p>El modelo exponencial se parece al modelo esférico en que la variabilidad espacial alcanza el umbral gradualmente. La relación entre dos puntos de muestra decae gradualmente, mientras que a una distancia infinita la dependencia espacial se disipa.</p>
+</div>
+<div id="tb6e38b62-07e5-a4d7-550e-028b5a326edd" class="exe-dialog-text js-hidden">
+<p>La función gaussiana utiliza una curva de distribución de probabilidad normal. Este tipo de modelo es útil cuando los fenómenos son similares a distancias cortas debido a su progresivo ascenso por el eje Y.</p>
+</div>
+<div id="t3f332dd4-011b-6800-4bba-16c94d803963" class="exe-dialog-text js-hidden">
+<p>Este tipo de modelo de predicción utiliza una función circular para ajustar la variabilidad espacial en un variograma. Se asemeja a la función del modelo esférico, donde la dependencia espacial se desvanece en su nivel asintótico.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tipos_de_interpolacin_geoestadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="otros_parmetros_de_la_interpolacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
